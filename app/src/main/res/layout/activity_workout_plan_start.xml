@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_stopwatch_info"
+        android:id="@+id/txt_stopwatch_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/txt_stopwatch_info"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chronometer"
+            android:layout_gravity="center_horizontal"
+            android:textSize="70dp"
+            android:textIsSelectable="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/btn_stopwatch_start"
+            android:id="@+id/btn_chronometer"
+            android:layout_alignBottom="@+id/chronometer"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickStopWatch" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Exercise name"
+        android:id="@+id/txt_exercise_name"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+
+        android:iconifiedByDefault="false"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_switch"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="51dp"
+            android:id="@+id/btn_exercise_next"
+            android:background="@drawable/icon_forward"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onClickExerciseNext" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="51dp"
+            android:id="@+id/btn_exercise_prev"
+            android:background="@drawable/icon_backward"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="onClickExercisePrev" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/txt_exercise_current"
+            android:textSize="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView11"
+            android:layout_toStartOf="@+id/textView11" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="/"
+            android:id="@+id/textView11"
+            android:textSize="40dp"
+            android:layout_alignTop="@+id/txt_exercise_current"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="5"
+            android:id="@+id/txt_exercise_count"
+            android:textSize="40dp"
+            android:layout_alignTop="@+id/txt_exercise_current"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView_sets"
+        android:layout_below="@+id/txt_exercise_name"
+        android:layout_above="@+id/layout_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+</RelativeLayout>

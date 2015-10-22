@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/activity_add_exercise">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_exercise_headline"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exercise_name_value"
+        android:hint="@string/exercise_name_hint"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:id="@+id/exercise_description_value"
+        android:hint="@string/exercise_description_hint"
+        android:gravity="top"
+        android:nestedScrollingEnabled="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headline_choose_category"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="3">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/WHOLE_BODY"
+                android:id="@+id/check_box_WHOLE_BODY"
+                android:onClick="chooseCategories"
+                android:layout_column="0"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BACK"
+                android:id="@+id/check_box_BACK"
+                android:onClick="chooseCategories"
+                android:layout_column="1"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ABDOMEN"
+                android:id="@+id/check_box_ABDOMEN"
+                android:onClick="chooseCategories"
+                android:layout_column="2"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LEGS"
+                android:id="@+id/check_box_LEGS"
+                android:onClick="chooseCategories"
+                android:layout_column="0"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HANDS"
+                android:id="@+id/check_box_HANDS"
+                android:onClick="chooseCategories"
+                android:layout_column="1"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button style="@style/Button.Green.Done"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_button"
+        android:onClick="addExercise"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

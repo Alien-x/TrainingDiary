@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">TrainingDiary</string>
+    <string name="action_settings">Settings</string>
+    <string name="exercise_name_hint">Název cviku</string>
+    <string name="exercise_description_hint">Popis cviku</string>
+    <string name="headline_choose_category">Vybrat kategorie cviku</string>
+    <string name="add_exercise_headline">Přidat nový cvik</string>
+    <string name="add_workout_plan_headline">Nový plán</string>
+    <string name="workout_plan_hint">Název plánu</string>
+    <string name="WHOLE_BODY">Celé tělo</string>
+    <string name="BACK">Záda</string>
+    <string name="ABDOMEN">Břicho</string>
+    <string name="HANDS">Ruce</string>
+    <string name="LEGS">Nohy</string>
+    <string name="add_button">Uložit</string>
+    <string name="cancel_button">Zrušit</string>
+    <string name="done_button">Dokončit</string>
+    <string name="button_done">Hotovo</string>
+    <string name="edit_set_button">Sety</string>
+    <string name="delete_button">Smazat</string>
+    <string name="edit_button">Upravit</string>
+    <string name="exercise_add_new_category">Přidat kategorii...</string>
+    <string name="title_activity_workout_plan_add">Nový cvičební plán</string>
+    <string name="add_exercise_to_workout">Přidat cvik</string>
+    <string name="dialog_pick_number">Počet cviků</string>
+    <string name="title_activity_workout_plan_detail">Cvičební plán</string>
+    <string name="title_activity_main">Tréninkový deník</string>
+    <string name="title_statistics">Statistika</string>
+    <string name="view_all_exercises">Zobrazit cviky</string>
+    <string name="view_all_workout_plans">Zobrazit cvičební plány</string>
+    <string name="title_activity_exercise_view_all">Cviky</string>
+    <string name="title_activity_workout_plan_view_all">Cvičební plány</string>
+    <string name="title_choose_workout_plan">Zvolte cvičební plán</string>
+    <string name="title_activity_statistics">Statistika cvičení</string>
+    <string name="title_activity_workout_plan_start">Průběh cvičení</string>
+    <string name="title_stopwatch">Rychlé stopky</string>
+    <string name="title_workout_plan_result">Výsledek cvičení</string>
+    <string name="title_activity_workout_plan_finished">Cvičení dokončeno</string>
+
+    <string name="label_stopwatch_info">Rychlé stopky pro měření doporučené přestávky mezi cviky.</string>
+    <string name="label_workout_plan">Cvičební plán</string>
+
+    <string name="menu_action">Akce</string>
+    <string name="menu_delete">Smazat</string>
+
+    <string name="btn_start_exercise">Začít posilovat</string>
+    <string name="btn_start_workout_plan">Zahájit cvičení</string>
+    <string name="btn_workout_plan_new">Nový cvičební plán</string>
+    <string name="btn_exercise_new">Nový cvik</string>
+
+    <string name="btn_stopwatch_start">Start</string>
+    <string name="btn_stopwatch_stop">Stop</string>
+
+    <string name="label_workout_plan_exercise_count">Počet cviků:</string>
+    <string name="label_search_filter">Filtrovat...</string>
+    <string name="label_sets_1">set</string>
+    <string name="label_sets_2_4">sety</string>
+    <string name="label_sets_5_more">setů</string>
+
+    <string name="toast_workout_plan_added">Cvičební plán byl přidán</string>
+    <string name="toast_workout_plan_deleted">Cvičební plán byl smazán</string>
+    <string name="toast_exercise_added">Cvik byl přidán</string>
+    <string name="toast_exercise_deleted">Cvik byl smazán</string>
+    <string name="toast_exercise_choose_categories">Zvolte prosím alespoň jednu kategorii cviku</string>
+    <string name="toast_exercise_choose_name">Zadejte prosím název cviku</string>
+    <string name="toast_workout_plan_choose_name">Zadejte prosím název cvičebního plánu</string>
+    <string name="toast_workout_plan_add_exercise">Přidejte prosím alespoň jeden cvik</string>
+    <string name="toast_exercise_sets_not_filled">Prosím vyplňte hodnoty všech setů</string>
+
+
+
+    <string name="delete_database">Smazat databázi</string>
+    <string name="hello_world">Hello world!</string>
+
+
+</resources>

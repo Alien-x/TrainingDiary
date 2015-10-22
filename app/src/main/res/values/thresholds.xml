@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_number_of_sets">10</integer>
+    <integer name="minimum_number_of_sets">1</integer>
+</resources>

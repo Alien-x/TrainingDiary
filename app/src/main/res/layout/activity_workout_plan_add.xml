@@ -1,0 +1,47 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/activity_add_workout_plan"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:id="@+id/workout_plan_top_table_row">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_workout_plan_headline"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <Button style="@style/Button.Blue.Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_done"
+            android:onClick="saveWorkoutPlan"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/workout_plan_name"
+            android:layout_column="0"
+            android:hint="@string/workout_plan_hint"/>
+    </TableRow>
+
+    <TableRow>
+        <Button style="@style/Button.Green.Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_exercise_to_workout"
+            android:id="@+id/add_exercise_button"
+            android:onClick="addExercise"/>
+
+    </TableRow>
+</TableLayout>

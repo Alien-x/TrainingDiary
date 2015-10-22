@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="1"
+            android:id="@+id/txt_set_number"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="0dp"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=". SET"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/txt_set_number"
+        android:layout_toRightOf="@+id/txt_set_number"
+        android:layout_toEndOf="@+id/txt_set_number"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/icon_weight"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="3"
+        android:id="@+id/edit_weight"
+        android:hint="0"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginRight="0dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:textColorHint="#606060"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="kg"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/edit_weight"
+        android:layout_alignBottom="@+id/edit_weight"
+        android:layout_toRightOf="@+id/edit_weight"
+        android:layout_toEndOf="@+id/edit_weight"
+        android:layout_marginRight="30dp" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/icon_repeat"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="2"
+        android:hint="0"
+        android:id="@+id/edit_repetition"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/edit_weight"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3"
+        android:textColorHint="#606060"/>
+
+
+</RelativeLayout>

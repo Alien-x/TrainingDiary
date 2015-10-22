@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="cz.muni.fi.trainingdiary.activities.ExerciseViewAll"
+    android:focusableInTouchMode="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:stretchColumns="*"
+        android:layout_alignParentTop="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/WHOLE_BODY"
+                android:id="@+id/check_box_WHOLE_BODY"
+                android:onClick="filterExercises"/>
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BACK"
+                android:id="@+id/check_box_BACK"
+                android:onClick="filterExercises"
+                android:layout_column="1" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ABDOMEN"
+                android:id="@+id/check_box_ABDOMEN"
+                android:onClick="filterExercises"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/LEGS"
+                android:id="@+id/check_box_LEGS"
+                android:onClick="filterExercises"
+                android:layout_column="0" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/HANDS"
+                android:id="@+id/check_box_HANDS"
+                android:onClick="filterExercises"
+                android:layout_column="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView_filter"
+        android:queryHint="@string/label_search_filter"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button style="@style/Button.Green.Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_exercise_new"
+        android:id="@+id/btn_exercise_add"
+        android:layout_alignParentBottom="true"
+        android:onClick="addExercise"
+        android:nestedScrollingEnabled="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView_exercises"
+        android:layout_below="@+id/searchView_filter"
+        android:layout_above="@+id/btn_exercise_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+</RelativeLayout>
